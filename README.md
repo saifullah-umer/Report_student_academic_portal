@@ -3,6 +3,8 @@
 int main() {
     string response1;
     int ans=0;
+    int rollNumber;
+    int response4;
     cout<<"Are you a teacher, a Student or a Parent? "<<endl;
     cout<<"Please select and enter one option."<<endl;
     cin>>response1;
