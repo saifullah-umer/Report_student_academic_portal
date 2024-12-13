@@ -1,36 +1,33 @@
 #include <iostream>
- using namespace std;
+using namespace std;
+
 int main() {
     string response1;
     int ans=0;
-    cout<<"Are you a teacher, a Student or a Parent? "<<endl;
+    cout<<"Which user is trying to log in ?"<<endl;
     cout<<"Please select and enter one option."<<endl;
+    cout<<"1.Teacher"<<endl;
+    cout<<"2.Parent"<<endl;
+    cout<<"3.teacher"<<endl;
     cin>>response1;
     if ( response1 == "teacher" || response1 =="t" || response1 =="T"){
         ans = 1;
     }
- patch-4
-    
-     else if (response2 == "No" || response2 == "0" || response2 == "n" || response2 == "N" || response2 == "no" || response2 == "NO"){
+    else if (response2 == "No" || response2 == "0" || response2 == "n" || response2 == "N" || response2 == "no" || response2 == "NO"){
       cout<<" Please update the students mid terms marks ?"<<endl;
-      string response3;
-      
-      }
-
-else if (response1 == "student" || response1 == "s" || response1 == "S") {
+      string response3;   
+    }
+    else if (response1 == "student" || response1 == "s" || response1 == "S") {
         ans = 2;
     }    
->main
-    
     switch(ans){
-        
     case 1:
     cout<<"Welcome teacher, lets get started"<<endl;
     string response2;
     cout<<"would you like to take attendance first?"<<endl;
     cin>>response2;
    if (response2 == "Yes" || response2 == "1" || response2 == "Y" || response2 == "y" || response2 == "yes") {
-    cout << "Please enter the students' roll numbers (type 'end' to stop):" << endl;
+    cout << "Please enter the students roll numbers (type 'end' to stop):" << endl;
     string attendance;
     int sum=0;
     while (true) {
@@ -40,21 +37,13 @@ else if (response1 == "student" || response1 == "s" || response1 == "S") {
             break; 
         }
     }
-    cout<<sum<<" Students are present in class today."<<endl;
+    cout<<"Number of students present today: "<<sum<<endl;
 }
- patch-4
-
-
      else if (response2 == "No" || response2 == "0" || response2 == "n" || response2 == "N" || response2 == "no" || response2 == "NO"){
       cout<<" Please update the students mid terms marks ?"<<endl;
       string response3;
-      
-      
-         
      }    
     break;
-
-    
     if (response2 == 1) {
             cout << "Your grades are as follows:" << endl;
             cout << "Math: 85" << endl;
