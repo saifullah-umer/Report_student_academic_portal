@@ -3,15 +3,15 @@
 int main() {
     string response1;
     int ans=0;
-    int rollNumber;
-    int response4;
     cout<<"Are you a teacher, a Student or a Parent? "<<endl;
     cout<<"Please select and enter one option."<<endl;
     cin>>response1;
     if ( response1 == "teacher" || response1 =="t" || response1 =="T"){
         ans = 1;
     }
-    
+else if (response1 == "student" || response1 == "s" || response1 == "S") {
+        ans = 2;
+    }    
     
     
     
@@ -46,6 +46,8 @@ int main() {
          
      }    
     break;
+
+    
     
     
     
