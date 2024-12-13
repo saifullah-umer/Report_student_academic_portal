@@ -47,7 +47,16 @@ int main() {
      }    
     break;
     
-    
+    if (response2 == 1) {
+            cout << "Your grades are as follows:" << endl;
+            cout << "Math: 85" << endl;
+            cout << "Science: 90" << endl;
+            cout << "English: 88" << endl;
+        } else if (response2 == 2) {
+            cout << "Your fees are paid." << endl;
+        } else {
+            cout << "Invalid selection, please restart the program." << endl;
+        }
     
     
     
