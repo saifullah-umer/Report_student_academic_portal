@@ -12,11 +12,12 @@ int main() {
         ans = 1;
     }
     
+     else if (response2 == "No" || response2 == "0" || response2 == "n" || response2 == "N" || response2 == "no" || response2 == "NO"){
+      cout<<" Please update the students mid terms marks ?"<<endl;
+      string response3;
+      
+      }
     
-    
-    
-    
-
     switch(ans){
         
     case 1:
@@ -37,19 +38,17 @@ int main() {
     }
     cout<<sum<<" Students are present in class today."<<endl;
 }
-
-     else if (response2 == "No" || response2 == "0" || response2 == "n" || response2 == "N" || response2 == "no" || response2 == "NO"){
-      cout<<" Please update the students mid terms marks ?"<<endl;
-      string response3;
-      
-      
-         
-     }    
+    
     break;
-    
-    
-    
-    
+
+    case 2:
+        cout << "Welcome student!" << endl;
+        
+        cout << "Please enter your roll number: ";
+        cin >> rollNumber;
+
+        cout << "Enter 1 for Grades and 2 for Fees" << endl;
+        cin >> response2;
     
     
     }
