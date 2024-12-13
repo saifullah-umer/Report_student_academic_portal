@@ -9,14 +9,19 @@ int main() {
     if ( response1 == "teacher" || response1 =="t" || response1 =="T"){
         ans = 1;
     }
+ patch-4
+    
+     else if (response2 == "No" || response2 == "0" || response2 == "n" || response2 == "N" || response2 == "no" || response2 == "NO"){
+      cout<<" Please update the students mid terms marks ?"<<endl;
+      string response3;
+      
+      }
+
 else if (response1 == "student" || response1 == "s" || response1 == "S") {
         ans = 2;
     }    
+>main
     
-    
-    
-    
-
     switch(ans){
         
     case 1:
@@ -37,6 +42,8 @@ else if (response1 == "student" || response1 == "s" || response1 == "S") {
     }
     cout<<sum<<" Students are present in class today."<<endl;
 }
+ patch-4
+
 
      else if (response2 == "No" || response2 == "0" || response2 == "n" || response2 == "N" || response2 == "no" || response2 == "NO"){
       cout<<" Please update the students mid terms marks ?"<<endl;
@@ -51,7 +58,18 @@ else if (response1 == "student" || response1 == "s" || response1 == "S") {
     
     
     
+ main
     
+    break;
+
+    case 2:
+        cout << "Welcome student!" << endl;
+        
+        cout << "Please enter your roll number: ";
+        cin >> rollNumber;
+
+        cout << "Enter 1 for Grades and 2 for Fees" << endl;
+        cin >> response2;
     
     
     }
