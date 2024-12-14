@@ -9,16 +9,13 @@ int main() {
     cout<<"1. Teacher"<<endl;
     cout<<"2. Parent"<<endl;
     cout<<"3. Student"<<endl;
-    cin>>response1;
-    if ( response1 == "teacher" || response1 =="t" || response1 =="T"){
-        ans = 1;
-    }
-    else if (response2 == "No" || response2 == "0" || response2 == "n" || response2 == "N" || response2 == "no" || response2 == "NO"){
-      cout<<" Please update the students mid terms marks ?"<<endl;
-      string response3;   
-    }
-    else if (response1 == "student" || response1 == "s" || response1 == "S") {
-        ans = 2;
+    cin>>*response1;
+    if(*response1=="teacher"||*response1=="t"||*response1=="T"){
+        *ans=1;
+    }else if(*response1=="parent"||*response1=="p"||*response1=="P"){
+        *ans=3;
+    }else if(*response1=="student"||*response1=="s"||*response1=="S"){
+        *ans=2;
     }    
     switch(ans){
     case 1:
