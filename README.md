@@ -43,20 +43,29 @@ int main() {
             delete response2;
             break;
         }
-
-    case 2:
-        cout << "Welcome student!" << endl;
-        
-        cout << "Please enter your roll number: ";
-        cin >> rollNumber;
-
-        cout << "Enter 1 for Grades and 2 for Fees" << endl;
-        cin >> response2;
-    
-    
-    }
-    
-    case 3: 
+case 2:{
+            cout<<"Welcome student!"<<endl;
+            string *rollNumber=new string;
+            string *response2=new string;
+            cout<<"Please enter your roll number:";
+            cin>>*rollNumber;
+            cout<<"Enter 1 for Grades and 2 for Fees"<<endl;
+            cin>>*response2;
+            if(*response2=="1"){
+                cout<<"Your grades are as follows:"<<endl;
+                cout<<"Math: 85"<<endl;
+                cout<<"Science: 90"<<endl;
+                cout<<"English: 88"<<endl;
+            }else if(*response2=="2"){
+                cout<<"Your fees are paid."<<endl;
+            }else{
+                cout<<"Invalid selection, please restart the program."<<endl;
+            }
+            delete rollNumber;
+            delete response2;
+            break;
+        }
+        case 3: 
         cout << "Welcome Parent!" << endl;
         string response3;
         cout << "Would you like to check your child's grades or fees?" << endl;
