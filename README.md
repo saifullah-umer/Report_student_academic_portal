@@ -65,26 +65,31 @@ case 2:{
             delete response2;
             break;
         }
-        case 3: 
-        cout << "Welcome Parent!" << endl;
-        string response3;
-        cout << "Would you like to check your child's grades or fees?" << endl;
-        cout << "Enter 1 for Grades and 2 for Fees" << endl;
-        cin >> response3;
-        
-        if (response3 == "1") {
-            cout << "Your child's grades are as follows:" << endl;
-            cout << "Math: 85" << endl;
-            cout << "Science: 90" << endl;
-            cout << "English: 88" << endl;
-        } else if (response3 == "2") {
-            cout << "Your child's fees status: Paid" << endl;
-        } else {
-            cout << "Invalid selection, please restart the program." << endl;
+        case 3:{
+            cout<<"Welcome Parent!"<<endl;
+            string *response3=new string;
+            cout<<"Would you like to check your child's grades or fees?"<<endl;
+            cout<<"Enter 1 for Grades and 2 for Fees"<<endl;
+            cin>>*response3;
+            if(*response3=="1"){
+                cout<<"Your child's grades are as follows:"<<endl;
+                cout<<"Math: 85"<<endl;
+                cout<<"Science: 90"<<endl;
+                cout<<"English: 88"<<endl;
+            }else if(*response3=="2"){
+                cout<<"Your child's fees status: Paid"<<endl;
+            }else{
+                cout<<"Invalid selection, please restart the program."<<endl;
+            }
+            delete response3;
+            break;
         }
-        break;
-    
-    
-    
-    system("pause");
+        default:{
+            cout<<"Invalid selection, please restart the program."<<endl;
+            break;
+        }
+    }
+    delete response1;
+    delete ans;
+    return 0;
 }
