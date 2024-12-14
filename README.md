@@ -2,13 +2,13 @@
 using namespace std;
 
 int main() {
-    string response1;
-    int ans=0;
-    cout<<"Which user is trying to log in ?"<<endl;
+    string *response1=new string;
+    int *ans=new int(0);
+    cout<<"Which user is trying to log in?"<<endl;
     cout<<"Please select and enter one option."<<endl;
-    cout<<"1.Teacher"<<endl;
-    cout<<"2.Parent"<<endl;
-    cout<<"3.teacher"<<endl;
+    cout<<"1. Teacher"<<endl;
+    cout<<"2. Parent"<<endl;
+    cout<<"3. Student"<<endl;
     cin>>response1;
     if ( response1 == "teacher" || response1 =="t" || response1 =="T"){
         ans = 1;
