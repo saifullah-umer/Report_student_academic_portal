@@ -8,9 +8,9 @@ int main() {
 
     cout<<"Which user is trying to log in?\n";
     cout<<"Please select and enter one option.\n";
-    cout<<"1. Teacher\n";
-    cout<<"2. Parent\n";
-    cout<<"3. Student\n";
+    cout<<"1.Teacher\n";
+    cout<<"2.Parent\n";
+    cout<<"3.Student\n";
     cin>>*response1;
 
     if(*response1=="1"||*response1=="teacher"||*response1=="t"||*response1=="T") {
