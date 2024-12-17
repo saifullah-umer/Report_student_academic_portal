@@ -1,11 +1,30 @@
 #include <iostream>
 #include <string>
 using namespace std;
+int roll;
+
+char marks(int earned_marks) {
+    char grade;
+    if (earned_marks >= 90) {
+        grade = 'A';
+    } else if (earned_marks >= 80) {
+        grade = 'B';
+    } else if (earned_marks >= 70) {
+        grade = 'C';
+    } else if (earned_marks >= 60) {
+        grade = 'D';
+    } else {
+        grade = 'F';
+    }
+    cout << "Grade earned by "<< roll <<" is: " << grade << endl;
+    return grade;
+}
+
 
 int main() {
     string* response1 = new string;
     int* ans = new int(0);
-
+    int marks_earned;
     cout<<"Which user is trying to log in?\n";
     cout<<"Please select and enter one option.\n";
     cout<<"1.Teacher\n";
@@ -47,7 +66,13 @@ int main() {
                 delete attendance;
                 delete count;
             } else {
-                cout<<"Please update the students' mid-term marks.\n";
+                cout<<"Please Update the marks for students Exams."<<endl;
+                cout<<"Please Enter the roll number of the students' mid-term marks.\n";
+                cin>>roll;
+                cout<<"Please enter the marks earned by this student";
+                cin>>marks_earned;
+                marks(marks_earned);
+                
             }
 
             delete response2;
