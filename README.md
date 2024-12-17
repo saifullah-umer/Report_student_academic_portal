@@ -20,7 +20,6 @@ char marks(int earned_marks) {
     return grade;
 }
 
-
 int main() {
     string* response1 = new string;
     int* ans = new int(0);
@@ -81,7 +80,8 @@ int main() {
         case 2: {
             cout<<"Welcome Parent!\n";
             string* response3 = new string;
-
+            cout<<"please enter your childs roll number";
+            cin>>roll;
             cout<<"Would you like to check your child's grades or fees?\n";
             cout<<"Enter 1 for Grades and 2 for Fees\n";
             cin>>*response3;
@@ -104,17 +104,20 @@ int main() {
             cout<<"Welcome student!\n";
             string* rollNumber = new string;
             string* response2 = new string;
-
+            
             cout<<"Please enter your roll number: ";
             cin>>*rollNumber;
             cout<<"Enter 1 for Grades and 2 for Fees\n";
             cin>>*response2;
 
             if(*response2=="1") {
-                cout<<"Your grades are as follows:\n";
-                cout<<"Math: 85\n";
-                cout<<"Science: 90\n";
-                cout<<"English: 88\n";
+                string subjects[] = {"Math", "Science", "English", "History", "Computer Science"};
+                int marks[] = {85, 90, 88, 92, 95};
+
+                cout << "Your grades are as follows:\n";
+                for(int i = 0; i < 5; i++) {
+                    cout << subjects[i] << ": " << marks[i] << "\n";
+                }
             } else if(*response2=="2") {
                 cout<<"Your fees are paid.\n";
             } else {
